@@ -2,7 +2,7 @@ function csvToObj(str){
   const rows = str.split('\n')
   const arrRows = rows.filter((item, index, arr)=>{
       if(item.split(',').length===arr[0].split(',').length) return item
-  }).map(i => i.split(','))
+  }).map(i => i.split(',').slice(1, i.length))
   const data = arrRows.slice(1,arrRows.length).map(item => {
     const obj = {}
     arrRows[0].map((key, index)=>{

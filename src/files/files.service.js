@@ -27,7 +27,6 @@ function processData(payload) {
       lines: csvToObj(i)
     }
   })
-  console.log(arr)
   return arr;
 }
 
