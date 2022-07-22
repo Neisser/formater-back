@@ -5,6 +5,7 @@
   "scripts": {
     "start": "nodemon ./bin/www",
     "inspect": "nodemon --inspect ./bin/www",
+    "fix": "standard --fix",
     "test": "mocha 'test/**/*.spec.js' --timeout 10000"
   },
   "dependencies": {
@@ -20,7 +21,8 @@
   "devDependencies": {
     "chai": "*",
     "mocha": "*",
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.19",
+    "standard": "*"
   },
   "engines": {
     "node": ">=14.0.0"

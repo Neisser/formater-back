@@ -1,9 +1,9 @@
-const expect = require('chai').expect;
+const expect = require('chai').expect
 
 const { getJsonData } = require('../src/files/files.service')
 
 describe('Files domain test', function (done) {
-  it('Should get json data from files', async function() {
+  it('Should get json data from files', async function () {
     // Arrange
     const dataFormat = {
       type: 'array',
@@ -14,7 +14,7 @@ describe('Files domain test', function (done) {
     }
 
     // Act
-    const data = await getJsonData();
+    const data = await getJsonData()
 
     // Assert: response type
     expect(data).to.be.a(dataFormat.type)
